@@ -16,7 +16,7 @@ public class UniqueChars {
         for (int i  = 0; i < s.length(); i++) {
             flag = false;
             for (int j = 0; j < uniqueChars.length(); j++) {
-                if (s.charAt(i) == uniqueChars.charAt(j)) {
+                if (s.charAt(i) == uniqueChars.charAt(j) && s.charAt(i) != 32) {
                     flag = true;
                 }
             }
